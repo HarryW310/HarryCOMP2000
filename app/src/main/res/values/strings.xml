@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">COMP2000</string>
+    <string name="login_password">password</string>
+    <string name="user_txt1">Employee Login</string>
+    <string name="username">Username</string>
+    <string name="img">img</string>
+    <string name="user_button">Login</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="User_Type">User Type</string>
+    <string name="title_activity_user_type">User Type</string>
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+</resources>
