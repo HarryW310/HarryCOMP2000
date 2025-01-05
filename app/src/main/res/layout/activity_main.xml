@@ -15,6 +15,7 @@
         android:layout_marginTop="170dp"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="510dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:inputType="text"
@@ -22,7 +23,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -32,13 +34,16 @@
         android:layout_marginTop="340dp"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="340dp"
-        android:contentDescription="@string/login_password"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        android:hint="@string/password_hint" />
+
 
     <EditText
         android:id="@+id/editTextText5"
@@ -48,13 +53,15 @@
         android:layout_marginTop="275dp"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="405dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="text"
         android:text="@string/username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
 
     <ImageView
         android:id="@+id/imageView"
