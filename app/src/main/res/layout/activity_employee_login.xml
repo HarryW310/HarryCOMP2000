@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <EditText
         android:id="@+id/editTextText4"
@@ -71,9 +71,9 @@
         android:layout_marginTop="63dp"
         android:layout_marginEnd="72dp"
         android:layout_marginBottom="561dp"
-        android:background="#000000"
+        android:background="@color/green"
         android:contentDescription="@string/img"
-        android:padding="1dp"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -91,6 +91,7 @@
         android:layout_marginTop="455dp"
         android:layout_marginEnd="122dp"
         android:layout_marginBottom="197dp"
+        android:textSize="24sp"
         android:backgroundTint="@color/green"
         android:text="@string/user_button"
         app:layout_constraintBottom_toBottomOf="parent"

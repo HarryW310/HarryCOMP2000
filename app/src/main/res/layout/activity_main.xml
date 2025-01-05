@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user_type">
+    tools:context=".activity_main">
 
     <Button
         android:id="@+id/button2"
@@ -31,7 +31,7 @@
         android:layout_marginTop="357dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="281dp"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/blue"
         android:text="@string/admin_button"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,13 +41,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="179dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="538dp"
-        android:text="@string/RESTful"
+        android:layout_width="223dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="536dp"
+        android:text="@string/WorkFlow"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
