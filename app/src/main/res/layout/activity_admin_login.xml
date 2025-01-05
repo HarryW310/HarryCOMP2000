@@ -19,12 +19,12 @@
         android:ems="10"
         android:gravity="center"
         android:inputType="text"
-        android:text="@string/user_txt1"
+        android:text="@string/user_txt2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor,VisualLintOverlap" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -36,13 +36,13 @@
         android:layout_marginBottom="340dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/password_hint"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor"
-        android:hint="@string/password_hint" />
+        tools:ignore="LabelFor,TextContrastCheck" />
 
 
     <EditText
@@ -80,7 +80,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/default_pfp" />
+        app:srcCompat="@drawable/default_pfp"
+        tools:ignore="ImageContrastCheck" />
 
     <Button
         android:id="@+id/button"
@@ -90,7 +91,7 @@
         android:layout_marginTop="455dp"
         android:layout_marginEnd="122dp"
         android:layout_marginBottom="197dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/red"
         android:text="@string/user_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

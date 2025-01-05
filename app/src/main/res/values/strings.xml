@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">COMP2000</string>
     <string name="user_txt1">Employee Login</string>
+    <string name="user_txt2">Admin Login</string>
     <string name="username">Username</string>
     <string name="img">img</string>
     <string name="user_button">Login</string>
     <string name="password_hint">Enter your password</string>
+    <string name="employee_button">Employee Login</string>
+    <string name="admin_button">Admin Login</string>
+    <string name="RESTful">RESTful</string>
 </resources>
