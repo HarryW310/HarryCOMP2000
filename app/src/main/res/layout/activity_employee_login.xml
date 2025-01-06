@@ -27,7 +27,7 @@
         tools:ignore="LabelFor,VisualLintOverlap" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/EmployeePassword"
         android:layout_width="213dp"
         android:layout_height="51dp"
         android:layout_marginStart="99dp"
@@ -46,7 +46,7 @@
 
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/EmployeeUsername"
         android:layout_width="213dp"
         android:layout_height="51dp"
         android:layout_marginStart="99dp"
@@ -55,13 +55,13 @@
         android:layout_marginBottom="405dp"
         android:autofillHints=""
         android:ems="10"
-        android:inputType="text"
-        android:text="@string/username"
+        android:hint="@string/ID"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -82,7 +82,7 @@
         tools:ignore="ImageContrastCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/EmployeeButton"
         android:layout_width="168dp"
         android:layout_height="79dp"
         android:layout_marginStart="121dp"

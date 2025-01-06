@@ -10,5 +10,10 @@
         <item name="background">@drawable/rectangular_button</item>
     </style>
 
+    <style name="CustomButtonStyle2" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="background">@drawable/rectangular_button2</item>
+    </style>
+
     <style name="Theme.HarryCOMP2000" parent="Base.Theme.HarryCOMP2000" />
 </resources>

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Employee_Home">
+    tools:context=".admin_home">
 
     <ImageView
         android:id="@+id/imageView"
@@ -15,7 +15,7 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="44dp"
         android:layout_marginBottom="571dp"
-        android:background="@color/green"
+        android:background="@color/blue"
         android:contentDescription="@string/img"
         android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,59 +42,93 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button7"
         style="@style/CustomButtonStyle"
         android:layout_width="259dp"
-        android:layout_height="105dp"
+        android:layout_height="95dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="376dp"
-        android:background="@drawable/rectangular_button"
-        android:text="@string/Details"
+        android:layout_marginBottom="446dp"
+        android:background="@drawable/rectangular_button2"
+        android:text="@string/AddDetails"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button8"
         style="@style/CustomButtonStyle"
         android:layout_width="259dp"
-        android:layout_height="105dp"
+        android:layout_height="95dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="295dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="256dp"
-        android:background="@drawable/rectangular_button"
-        android:text="@string/Edit"
+        android:layout_marginBottom="341dp"
+        android:background="@drawable/rectangular_button2"
+        android:text="@string/CheckDetails"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button9"
         style="@style/CustomButtonStyle"
         android:layout_width="259dp"
-        android:layout_height="105dp"
+        android:layout_height="95dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="490dp"
+        android:layout_marginTop="400dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="136dp"
-        android:background="@drawable/rectangular_button"
-        android:text="@string/Holiday"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/rectangular_button2"
+        android:text="@string/EditDetails"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button10"
+        style="@style/CustomButtonStyle"
+        android:layout_width="259dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="131dp"
+        android:background="@drawable/rectangular_button2"
+        android:text="@string/DeleteDetails"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/CustomButtonStyle"
+        android:layout_width="259dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/rectangular_button2"
+        android:text="@string/ManageHoliday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

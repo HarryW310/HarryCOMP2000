@@ -2,7 +2,7 @@
     <string name="app_name">COMP2000</string>
     <string name="user_txt1">Employee Login</string>
     <string name="user_txt2">Admin Login</string>
-    <string name="username">Username</string>
+    <string name="ID">Enter your ID</string>
     <string name="img">img</string>
     <string name="user_button">Login</string>
     <string name="password_hint">Enter your password</string>
@@ -12,5 +12,10 @@
     <string name="Username">Username</string>
     <string name="Details">My Details</string>
     <string name="Edit">Edit Details</string>
-    <string name="Holiday">Annual leave / Holiday</string>
+    <string name="Holiday">Annual Leave / Holiday</string>
+    <string name="AddDetails">Add Employee Details</string>
+    <string name="CheckDetails">Check Employee Details</string>
+    <string name="EditDetails">Edit Employee Details</string>
+    <string name="DeleteDetails">Delete Employee Details</string>
+    <string name="ManageHoliday">Manage Annual Leave / Holiday</string>
 </resources>

@@ -10,6 +10,8 @@ import retrofit2.http.Path;
 import java.util.List;
 import com.example.harrycomp2000.models.Employee;
 import com.example.harrycomp2000.models.ApiResponse;
+import com.example.harrycomp2000.models.LoginRequest;
+import com.example.harrycomp2000.models.User;
 
 public interface ApiService {
 
@@ -30,4 +32,6 @@ public interface ApiService {
 
     @GET("health")
     Call<ApiResponse> healthCheck();
+
+    Call<User> login(@Body LoginRequest loginRequest);
 }
