@@ -34,6 +34,9 @@ public class Employee_Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_login);
 
+        int employeeID = getIntent().getIntExtra("employeeID", -1);
+
+
         usernameEditText = findViewById(R.id.EmployeeUsername);
         passwordEditText = findViewById(R.id.EmployeePassword);
         loginButton = findViewById(R.id.EmployeeButton);
@@ -81,12 +84,11 @@ public class Employee_Login extends AppCompatActivity {
     private void login(String username, String password) {
         try {
             int employeeID = Integer.parseInt(username);
-
             if (validEmployeeIDs.contains(employeeID) && password.equals("WorkFlow")) {
                 Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(Employee_Login.this, Employee_Home.class);
-                intent.putExtra("employeeID", employeeID); // Pass employee ID to the next activity
+                intent.putExtra("employeeID", employeeID);
                 startActivity(intent);
             } else {
                 Toast.makeText(this, "Invalid employee ID or password", Toast.LENGTH_SHORT).show();
