@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Employee_Login">
 
     <EditText
         android:id="@+id/editTextText4"
@@ -67,19 +67,17 @@
         android:id="@+id/imageView"
         android:layout_width="116dp"
         android:layout_height="116dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="148dp"
         android:layout_marginBottom="561dp"
         android:background="@color/green"
         android:contentDescription="@string/img"
         android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/default_pfp"
         tools:ignore="ImageContrastCheck" />
 
@@ -91,9 +89,9 @@
         android:layout_marginTop="455dp"
         android:layout_marginEnd="122dp"
         android:layout_marginBottom="197dp"
-        android:textSize="24sp"
         android:backgroundTint="@color/green"
         android:text="@string/user_button"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

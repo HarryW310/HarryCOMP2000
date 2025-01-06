@@ -2,6 +2,7 @@ package com.example.harrycomp2000;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
@@ -12,24 +13,24 @@ import com.example.harrycomp2000.models.Employee;
 
 
 import java.util.List;
+import java.util.Objects;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Login extends AppCompatActivity {
+public class Employee_Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_employee_login);
 
-        // Initialize ApiService
         ApiService apiService = ApiClient.getRetrofitInstance().create(ApiService.class);
 
-        // Example: Fetch all employees
-        apiService.getAllEmployees().enqueue(new Callback<List<Employee>>() {
+        apiService.getAllEmployees().enqueue(new Callback<>() {
             @Override
-            public void onResponse(Call<List<Employee>> call, Response<List<Employee>> response) {
+            public void onResponse(@NonNull Call<List<Employee>> call, @NonNull Response<List<Employee>> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     for (Employee employee : response.body()) {
                         Log.d("Employee", employee.getFirstname() + " " + employee.getLastname());
@@ -40,10 +41,11 @@ public class Login extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<Employee>> call, Throwable t) {
-                Log.e("API Failure", t.getMessage());
+            public void onFailure(@NonNull Call<List<Employee>> call, @NonNull Throwable t) {
+                Log.e("API Failure", Objects.requireNonNull(t.getMessage()));
             }
         });
+
     }
 }
 

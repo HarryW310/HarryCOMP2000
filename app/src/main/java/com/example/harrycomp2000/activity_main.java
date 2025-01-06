@@ -1,6 +1,8 @@
 package com.example.harrycomp2000;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,20 @@ public class activity_main extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button buttonEmployee = findViewById(R.id.button2);
+
+        buttonEmployee.setOnClickListener(v -> {
+            Intent intent = new Intent(activity_main.this, Employee_Login.class);
+            startActivity(intent);
+        });
+
+        Button buttonAdmin = findViewById(R.id.button3);
+
+        buttonAdmin.setOnClickListener(v -> {
+            Intent intent = new Intent(activity_main.this, Admin_Login.class);
+            startActivity(intent);
+        });
     }
+
 }

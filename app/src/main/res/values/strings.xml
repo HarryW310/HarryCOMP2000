@@ -9,4 +9,8 @@
     <string name="employee_button">Employee Login</string>
     <string name="admin_button">Admin Login</string>
     <string name="WorkFlow">WorkFlow</string>
+    <string name="Username">Username</string>
+    <string name="Details">My Details</string>
+    <string name="Edit">Edit Details</string>
+    <string name="Holiday">Annual leave / Holiday</string>
 </resources>
